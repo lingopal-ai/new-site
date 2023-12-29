@@ -18,9 +18,8 @@ const Footer = () => {
               "col-span-2 lg:col-span-1 flex flex-col items-start gap-5"
             )}
           >
-            <Icons.Logo />
             <span className={classNames(styles.companyInfo)}>
-              Build new AI products with voice data leveraging AssemblyAI’s
+              Build new AI products with voice data leveraging Lingopal`s 
               industry-leading Speech AI models for accurate speech-to-text,
               speaker detection, sentiment analysis, chapter detection, PII
               redaction, and more.
@@ -87,7 +86,7 @@ const Footer = () => {
           <div className={classNames("grid grid-cols-2 gap-5")}>
             <div className={classNames("col-span-2 lg:col-span-1")}>
               <span className={classNames(styles.label)}>
-                © 2023 AssemblyAI, Inc.
+                © 2023 Lingopal AI, Inc.
               </span>
             </div>
             <div
