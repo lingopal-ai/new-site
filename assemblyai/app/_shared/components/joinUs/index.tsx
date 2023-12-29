@@ -11,7 +11,7 @@ const JoinUs = () => {
     <div className="mt-10 md:mt-20">
       <div className={classNames("custom-container w-full ")}>
         <span className={classNames(styles.title, "")}>
-          Careers at AssemblyAI
+          Careers at Lingopal AI
         </span>
         <div
           className={classNames(
