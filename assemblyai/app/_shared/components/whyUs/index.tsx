@@ -9,7 +9,7 @@ const WhyUs = () => {
     <div className={classNames("custom-container ")}>
       <span className={classNames(styles.whyUsLabel)}>Why lingopal</span>
       <h2 className={classNames(styles.title, "mt-2")}>
-        Launch streams to a global audience with no hassle
+        Our AI globalizes your content with no hassle
       </h2>
       <div
         className={classNames(
