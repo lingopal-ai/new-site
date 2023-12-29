@@ -1,0 +1,130 @@
+@import "@utils/colors.scss";
+
+.getStartedContainer {
+  background-color: $DARKNAVYBLUE;
+  width: 100%;
+  height: 100%;
+  padding: 84px 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgCont {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -20%;
+  height: 80%;
+  margin: 0;
+  z-index: 0;
+  opacity: 0.2;
+  background: $PRIMARY;
+  filter: blur(115px);
+}
+
+.title {
+  color: $SECONDARY;
+  text-align: center;
+  font-family: var(--font-jb-mono);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 160% */
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.subTitle {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-roboto);
+  font-size: 47.438px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55.2px;
+  z-index: 2;
+}
+
+.btn1 {
+  background-color: white !important;
+  color: $PRIMARY !important;
+  border: 1px solid #fff !important;
+  z-index: 2;
+}
+
+.btn2 {
+  border: 1px solid #fff !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(113, 127, 226, 0.15) 100%
+  ) !important;
+  z-index: 2;
+}
+
+.codeContainer {
+  background-color: $DARKGRAY;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid $SECONDARY;
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow-x: auto;
+  z-index: 2;
+
+  .codeIndex {
+    color: $GRAY2;
+    text-align: right;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+  }
+
+  .codeLine {
+    color: #fcfcfd;
+    font-family: var(--font-jb-mono);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+    span {
+      color: $PURPLE_200;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .getStartedContainer {
+    padding: 48px 0px;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+
+  .subTitle {
+    font-size: 39.531px;
+    line-height: 46px;
+  }
+
+  .btn1 {
+    width: 100%;
+  }
+
+  .btn2 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .getStartedContainer {
+    padding: 72px 30px;
+  }
+}

@@ -1,0 +1,30 @@
+.page {
+  position: absolute;
+  background: transparent;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  bottom: 10px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+.Box {
+  height: 200px;
+  width: 6px;
+  opacity: 0.75;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #4f62db 0%, #2545d3 80%);
+}
+.magnet {
+  height: 40px;
+  width: 40px;
+  border-radius: 10 * 0.33;
+}

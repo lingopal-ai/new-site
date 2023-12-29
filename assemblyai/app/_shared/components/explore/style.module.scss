@@ -1,0 +1,202 @@
+@import "@utils/colors.scss";
+
+.topContainer {
+  padding: 168px 0px 140px;
+}
+
+.TopcontentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  color: $BLACK;
+  font-family: var(--font-roboto);
+  font-size: 47.25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55.2px;
+  max-width: 515px;
+}
+
+.subTitle {
+  font-family: var(--font-roboto);
+  font-size: 15.75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: $GRAY;
+  max-width: 643.56px;
+}
+
+.codingContainer {
+  position: relative;
+  min-height: 520px;
+  min-width: 620px;
+}
+
+.contentContainer {
+  max-width: 680px;
+  width: 100%;
+}
+
+.codeContainer {
+  background-color: $DARKGRAY;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid $GRAY;
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow-x: auto;
+  z-index: 2;
+
+  .codeIndex {
+    color: $GRAY2;
+    text-align: right;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+  }
+
+  .codeLine {
+    color: #fcfcfd;
+    font-family: var(--font-jb-mono);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+    span {
+      color: $PURPLE_200;
+    }
+  }
+}
+
+.codeContainer2 {
+  background-color: white;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid $SECONDARY;
+  max-width: 558px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow-x: auto;
+  z-index: 2;
+
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  right: -5%;
+  z-index: 2;
+
+  .codeIndex {
+    color: $GRAY2;
+    text-align: right;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+  }
+
+  .codeBlock {
+    font-family: var(--font-jb-mono);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: $BLACK;
+  }
+
+  .codeLine {
+    color: #183691;
+    font-family: var(--font-jb-mono);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+    white-space: nowrap;
+    span {
+      color: #0086b3;
+    }
+  }
+}
+
+.svgContainers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  margin-right: 20%;
+}
+
+.boxSvg {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 110px;
+  svg {
+    max-width: 100%;
+  }
+}
+
+.boxSvg2 {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  height: 110px;
+  svg {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .TopcontentContainer {
+    gap: 40px !important;
+    flex-direction: column !important;
+  }
+  .codingContainer {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  .contentContainer {
+    max-width: 100% !important;
+  }
+  .codeContainer {
+    max-width: 100% !important;
+  }
+  .codeContainer2 {
+    max-width: 100% !important;
+  }
+  .svgContainers {
+    display: none;
+  }
+  .topContainer {
+    padding: 70px 0px 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 39.375px;
+    line-height: 46px;
+  }
+
+  .subTitle {
+    font-size: 13.891px;
+    line-height: 21px;
+  }
+}

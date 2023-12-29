@@ -1,0 +1,137 @@
+@import "@utils/colors.scss";
+
+.headerContainer {
+  background-color: $PRIMARY;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: absolute;
+  top: -20%;
+  height: 50%;
+  left: 50%;
+  translate: translateX(-50%);
+  left: 20%;
+  right: 20%;
+  z-index: 1;
+  opacity: 0.75;
+  background: $PURPLE_300;
+  filter: blur(135px);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 210px 0px 196px;
+  h1 {
+    color: #fff;
+    font-family: var(--font-roboto);
+    font-size: 55.563px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64.4px;
+  }
+  span {
+    color: $SECONDARY;
+  }
+  p {
+    max-width: 659px;
+    color: $LIGHT_GRAY;
+    font-family: var(--font-roboto-thin);
+    font-size: 17.859px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .btn1 {
+    background-color: white !important;
+    border: 1px solid #fff !important;
+    span {
+      color: $PRIMARY !important;
+    }
+  }
+  .btn2 {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(113, 127, 226, 0.15) 100%
+    ) !important;
+    border: 1px solid #fff !important;
+    span {
+      color: white !important;
+    }
+  }
+}
+
+.loopSlider {
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding: 28px 0px;
+  overflow: hidden;
+  z-index: 3;
+
+  .inner {
+    display: flex;
+    width: fit-content;
+    animation-name: loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: "normal";
+    animation-duration: 100000ms;
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .content {
+    .btn1 {
+      width: 100% !important;
+    }
+    .btn2 {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    h1 {
+      font-size: 47.25px;
+      line-height: 55.2px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 120px 0px 112px;
+  }
+  .loopSlider {
+    padding: 16px 0px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .content {
+    padding: 180px 0px 168px;
+  }
+
+  .loopSlider {
+    padding: 24px 0px;
+  }
+}

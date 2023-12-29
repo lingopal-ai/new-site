@@ -1,0 +1,232 @@
+@import "@utils/colors.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 12;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 12;
+  width: 100%;
+  .logo {
+    height: 24px;
+    width: 140px;
+  }
+  .dropOption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding: 21px 0px;
+    gap: 6px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      font-family: var(--font-roboto-thin);
+      line-height: 150%;
+      letter-spacing: 0;
+    }
+    svg {
+      transform: rotate(0deg);
+      transition: transform 0.15s ease-in-out;
+    }
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .link {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: var(--font-roboto-thin);
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+  .contactLink {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: var(--font-roboto-thin);
+    line-height: 150%;
+    letter-spacing: 0;
+    position: relative;
+    &::after {
+      content: "";
+      height: min(2px, max(1px, 0.05em));
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: width 0.2s ease-in-out;
+      background-color: white;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+      cursor: pointer;
+    }
+  }
+
+  .btn1 {
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
+    font-family: var(--font-roboto-thin) !important;
+    border: 1px solid white !important;
+    background-color: rgba(113, 127, 226, 0.2) !important;
+    z-index: 3;
+  }
+
+  .btn2 {
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
+    font-family: var(--font-roboto) !important;
+    background-color: white !important;
+    color: $PRIMARY !important;
+    border: 1px solid white !important;
+  }
+  .hamIconContainer {
+    padding: 12px 0px;
+    svg {
+      path {
+        stroke: white;
+      }
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+.bgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 1px solid #e3e8ef;
+  border-top: none;
+}
+
+.revertColors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 12;
+  width: 100%;
+  .logo {
+    height: 24px;
+    width: 140px;
+
+    g {
+      path:nth-child(1) {
+        fill: #2545d3 !important;
+      }
+      path:nth-child(2) {
+        fill: #566de8 !important;
+      }
+      path {
+        fill: black !important;
+      }
+    }
+  }
+  .dropOption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    padding: 21px 0px;
+    gap: 6px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: black;
+      font-family: var(--font-roboto);
+      line-height: 150%;
+      letter-spacing: 0;
+    }
+    svg {
+      transform: rotate(0deg);
+      transition: transform 0.15s ease-in-out;
+    }
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .link {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: var(--font-roboto);
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+  .contactLink {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: var(--font-roboto);
+    line-height: 150%;
+    letter-spacing: 0;
+    position: relative;
+    &::after {
+      content: "";
+      height: min(2px, max(1px, 0.05em));
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: width 0.2s ease-in-out;
+      background-color: black;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+      cursor: pointer;
+    }
+  }
+
+  .btn1 {
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
+    font-family: var(--font-roboto) !important;
+    border: 1px solid $PRIMARY !important;
+    background-color: white !important;
+    z-index: 3;
+    color: $PRIMARY !important;
+  }
+
+  .btn2 {
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
+    font-family: var(--font-roboto) !important;
+    background-color: $PRIMARY !important;
+    color: white !important;
+    border: 1px solid $PRIMARY !important;
+  }
+  .hamIconContainer {
+    padding: 12px 0px;
+    svg {
+      path {
+        stroke: black;
+      }
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

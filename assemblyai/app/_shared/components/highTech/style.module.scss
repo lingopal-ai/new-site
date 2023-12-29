@@ -1,0 +1,125 @@
+@import "@components/whyUs/style.module.scss";
+
+.contentContainer {
+  border-radius: 16px;
+  padding: 28px;
+  background-color: $BLACK;
+}
+
+.thumbnailStyle {
+  min-width: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.animatedContainer {
+  border-radius: 16px;
+  height: 560px;
+  background-color: $BLACK;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0px 112px;
+  .column {
+    position: relative;
+    height: 100%;
+    width: 33.3336%;
+    min-width: 240px;
+    flex-direction: column;
+    &:nth-of-type(1) {
+      top: -20%;
+    }
+    &:nth-of-type(2) {
+      top: -65%;
+    }
+    &:nth-of-type(3) {
+      top: -10%;
+    }
+    .reviewCard {
+      padding: 14px;
+      background-color: $DARKNAVYBLUE;
+      border-radius: 16px;
+      p {
+        color: #fff;
+        font-family: var(--font-roboto-thin);
+        font-size: 17.578px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      label {
+        color: $SECONDARY;
+        font-family: var(--font-roboto-thin);
+        font-size: 17.578px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+  }
+  .col1 {
+    display: flex;
+  }
+  .col2 {
+    display: flex;
+  }
+  .col3 {
+    display: flex;
+  }
+}
+
+.btnStyle {
+  background-color: white !important;
+  color: $PRIMARY !important;
+}
+
+@media screen and (max-width: 640px) {
+  .column {
+    width: 100% !important;
+  }
+  .col2 {
+    display: none !important;
+  }
+  .col3 {
+    display: none !important;
+  }
+  .animatedContainer {
+    padding: 0px 32px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    .reviewCard {
+      p {
+        font-size: 15.625px;
+        line-height: 24px;
+      }
+      label {
+        font-size: 15.625px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .column {
+    width: 50% !important;
+  }
+  .col3 {
+    display: none !important;
+  }
+  .animatedContainer {
+    padding: 0px 48px !important;
+    height: 320px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .animatedContainer {
+    padding: 0px 96px !important;
+    height: 480px !important;
+  }
+}

@@ -1,0 +1,35 @@
+@import "@utils/colors.scss";
+
+.snakesContainer {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  bottom: 96px;
+  width: 463.8px;
+  justify-content: space-around;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.singleSnake {
+  position: absolute;
+  min-height: 40px;
+  width: 4px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.segment {
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background-color: $PURPLE_300;
+  position: relative;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.active {
+  background-color: $SECONDARY !important;
+}

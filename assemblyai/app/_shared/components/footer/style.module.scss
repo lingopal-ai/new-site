@@ -1,0 +1,131 @@
+@import "@utils/colors.scss";
+
+.container {
+  background-color: $PRIMARY;
+}
+
+.contentContainer {
+  padding: 56px 0px;
+}
+
+.companyInfo {
+  color: $LIGHT_GRAY;
+  font-family: var(--font-roboto);
+  font-size: 15.875px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 344px;
+}
+
+.socialIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  &::after {
+    content: "";
+    height: min(2px, max(1px, 0.05em));
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.2s ease-in-out;
+    background-color: white;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+    cursor: pointer;
+  }
+}
+
+.listTitle {
+  color: $SECONDARY;
+  font-family: var(--font-jb-mono);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 160% */
+  text-transform: uppercase;
+}
+
+.listItem {
+  color: #fff;
+  font-family: var(--font-roboto-thin);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  &::after {
+    content: "";
+    height: min(2px, max(1px, 0.05em));
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.2s ease-in-out;
+    background-color: white;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+    cursor: pointer;
+  }
+}
+
+.bottomContainer {
+  padding: 21px 0px;
+  background-color: $DARK_PRIMARY;
+}
+
+.label {
+  color: #fff;
+  font-family: var(--font-roboto-thin);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  white-space: nowrap;
+}
+
+.label2 {
+  color: #fff;
+  font-family: var(--font-roboto-thin);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  white-space: nowrap;
+  position: relative;
+  &::after {
+    content: "";
+    height: min(2px, max(1px, 0.05em));
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.2s ease-in-out;
+    background-color: white;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentContainer {
+    padding: 32px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .contentContainer {
+    padding: 48px 0px;
+  }
+}

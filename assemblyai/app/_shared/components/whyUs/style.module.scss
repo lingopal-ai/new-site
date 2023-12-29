@@ -1,0 +1,32 @@
+@import "@utils/colors.scss";
+
+.whyUsLabel {
+  color: $SECONDARY;
+  font-family: var(--font-jb-mono);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 160% */
+  text-transform: uppercase;
+}
+
+.title {
+  color: #fff;
+  font-family: var(--font-roboto);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55.2px;
+  max-width: 923px;
+}
+
+@media screen and (max-width: 768px) {
+  .whyUsLabel {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+  .title {
+    font-size: 39.688px;
+    line-height: 46px;
+  }
+}

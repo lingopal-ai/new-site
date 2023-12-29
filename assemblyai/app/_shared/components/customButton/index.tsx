@@ -1,0 +1,54 @@
+"use client";
+import classNames from "classnames";
+import styles from "./style.module.scss";
+
+interface BtnProps extends React.HTMLProps<HTMLButtonElement> {
+  containerStyle: any;
+  Icon: any;
+  iconStyle: any;
+  IconDirction: string;
+  disabled?: boolean;
+}
+
+const CustomButton = ({
+  title,
+  onClick,
+  containerStyle,
+  Icon,
+  iconStyle,
+  IconDirction,
+  disabled,
+  style,
+}: Partial<BtnProps>) => {
+  const direction = {
+    left: "left",
+    right: "right",
+  };
+  return (
+    <button
+      className={classNames(
+        styles.customBtnContainer,
+        containerStyle && containerStyle
+      )}
+      onClick={onClick}
+      disabled={disabled}
+      type="submit"
+      style={style}
+    >
+      {IconDirction === direction.left ? (
+        Icon ? (
+          <Icon className={iconStyle ? iconStyle : ""} />
+        ) : null
+      ) : null}
+
+      <span>{title}</span>
+      {IconDirction === direction.right ? (
+        Icon ? (
+          <Icon className={iconStyle ? iconStyle : ""} />
+        ) : null
+      ) : null}
+    </button>
+  );
+};
+
+export default CustomButton;
