@@ -37,7 +37,7 @@ const Explore = () => {
 
           <div
             className={classNames(
-              "flex flex-col items-center justify-between pl-28",
+              "flex flex-col items-center justify-between lg:pl-28",
               styles.codingContainer
             )}
           >
