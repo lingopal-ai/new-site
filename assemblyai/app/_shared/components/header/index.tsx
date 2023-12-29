@@ -1,7 +1,6 @@
 import { Icons } from "@assets";
 import CustomButton from "@components/customButton";
 import classNames from "classnames";
-import AnimatedText from "./AnimatedText";
 import styles from "./style.module.scss";
 import WaveAnimation from "./waveAnimation";
 import SnakeAnimation from "./snakeAnimation";
