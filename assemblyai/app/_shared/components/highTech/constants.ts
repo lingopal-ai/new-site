@@ -3,11 +3,11 @@ const data: {
   label1: string;
   label2: string;
 }[] = [
-  { title: "6.8%", label1: "Improvement on", label2: "Proper Noun Error Rate" },
-  { title: "31.7%", label1: "Improvement on", label2: "alphanumerics" },
+  { title: "97%", label1: "Translation Accuracy", label2: "A BLEU score of 54 ensures accurate translation" },
+  { title: "100%", label1: "Speaker Emotion", label2: "& Voice Captured" },
   {
-    title: "12.0%",
-    label1: "Improvement in",
+    title: "100%",
+    label1: "Our system handles multiple speakers with ease",
     label2: "robustness to noise",
   },
 ];

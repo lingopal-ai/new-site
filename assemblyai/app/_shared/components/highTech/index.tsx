@@ -40,14 +40,14 @@ const HighTech = () => {
           )}
         >
           <div className="col-span-3 md:col-span-2">
-            <Image
+            {/* <Image
               src={Images.VideoThumbnail}
               alt="thumbail"
               placeholder="blur"
               height={493}
               width={864}
               className={classNames(styles.thumbnailStyle)}
-            />
+            /> */}
           </div>
 
           <div
