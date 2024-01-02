@@ -76,7 +76,7 @@ const Header = () => {
           <Icons.Microsoft />
           <Icons.Mouth />
           <Icons.NSI />
-          {/* <Icons.PBS /> */}
+          <Icons.PBS />
           <Icons.Reddit />
           <Icons.SFT />
           <Icons.Tesla />
