@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className={classNames(styles.headerContainer, "relative")}>
       <div className={classNames(styles.bg)} />
-      <div className={classNames("custom-container flex")}>
+      <div className={classNames("custom-container lg:flex ")}>
         <div
           className={classNames(
             styles.content,
@@ -35,7 +35,7 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className="max-h-[554px] max-w-[831px] flex-1 relative h-[554px] z-10 self-end">
+        <div className="w-0 max-h-[554px] max-w-[831px] lg:flex-1 relative lg:h-[554px] z-10 self-end">
           <Image 
             src={"/header_image.png"}
             alt="Header Image"
