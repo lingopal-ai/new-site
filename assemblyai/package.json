@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.17.0",
     "jquery": "^3.7.1",
     "next": "14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sharp": "^0.33.1",
     "worker-timers": "^7.0.80"
   },
   "devDependencies": {
