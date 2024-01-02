@@ -14,8 +14,8 @@
   z-index: 12;
   width: 100%;
   .logo {
-    height: 24px;
-    width: 140px;
+    height: 43px;
+    width: 105px;
   }
   .dropOption {
     display: flex;
@@ -49,6 +49,24 @@
     font-family: var(--font-roboto-thin);
     line-height: 150%;
     letter-spacing: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: min(2px, max(1px, 0.05em));
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: width 0.2s ease-in-out;
+      background-color: white;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+      cursor: pointer;
+    }
   }
   .contactLink {
     font-size: 16px;
@@ -127,20 +145,7 @@
   z-index: 12;
   width: 100%;
   .logo {
-    height: 24px;
-    width: 140px;
-
-    g {
-      path:nth-child(1) {
-        fill: #2545d3 !important;
-      }
-      path:nth-child(2) {
-        fill: #566de8 !important;
-      }
-      path {
-        fill: black !important;
-      }
-    }
+    filter: invert(1);
   }
   .dropOption {
     display: flex;
@@ -174,6 +179,24 @@
     font-family: var(--font-roboto);
     line-height: 150%;
     letter-spacing: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: min(2px, max(1px, 0.05em));
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: width 0.2s ease-in-out;
+      background-color: black;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+      cursor: pointer;
+    }
   }
   .contactLink {
     font-size: 16px;

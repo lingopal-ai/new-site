@@ -4,12 +4,13 @@ import classNames from "classnames";
 import styles from "./style.module.scss";
 import WaveAnimation from "./waveAnimation";
 import SnakeAnimation from "./snakeAnimation";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <div className={classNames(styles.headerContainer, "relative")}>
       <div className={classNames(styles.bg)} />
-      <div className={classNames("custom-container")}>
+      <div className={classNames("custom-container flex")}>
         <div
           className={classNames(
             styles.content,
@@ -33,6 +34,14 @@ const Header = () => {
               containerStyle={classNames(styles.btn1)}
             />
           </div>
+        </div>
+        <div className="max-h-[554px] max-w-[831px] flex-1 relative h-[554px] z-10 self-end">
+          <Image 
+            src={"/header_image.png"}
+            alt="Header Image"
+            priority
+            fill
+          />
         </div>
       </div>
       <SnakeAnimation />

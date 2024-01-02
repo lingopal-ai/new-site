@@ -50,37 +50,14 @@ const JoinUs = () => {
             </div>
           </div>
           <div className={classNames(styles.vpCardContainer)}>
-            <Image
-              src={Images.VPCardBg}
-              alt=""
-              placeholder="blur"
-              className={classNames(styles.bgStyle)}
-            />
-            <div className={classNames(styles.vpContent, "gap-5")}>
-              <span className={classNames(styles.coma)}>“</span>
-              <p className={classNames(styles.para)}>
-                Join our team that's building frontier AI models, which will be
-                able to understand and process human speech with superhuman
-                abilities.
-              </p>
-              <span className={classNames(styles.name)}>
-                Domenic Donato, VP of Technology
-              </span>
-            </div>
             <div className={classNames(styles.avtContainer)}>
               <Image
-                src={Images.VPAvatar}
+                src={"/lingopal_banner.png"}
                 alt=""
                 className={classNames(styles.vpAvt)}
-                placeholder="blur"
+                fill
               />
             </div>
-
-            <Image
-              src={Images.StaticWave}
-              alt=""
-              className={classNames(styles.waveStyle)}
-            />
 
             <div className={classNames(styles.vpContent2, "gap-3")}>
               <p>
@@ -93,7 +70,7 @@ const JoinUs = () => {
           </div>
         </div>
         <CustomButton
-          title="See all careers"
+          title="Contact Us"
           containerStyle={classNames(" mb-20")}
         />
       </div>

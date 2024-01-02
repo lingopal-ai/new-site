@@ -135,17 +135,19 @@
 }
 
 .avtContainer {
-  height: 100%;
+  height: 203px;
+  width: 597px;
 }
 
 .vpAvt {
   position: absolute;
   object-fit: cover;
-  width: 54%;
+  aspect-ratio: 16/9;
   right: 16px;
   z-index: 2;
-  max-width: 392px;
+  max-width: 597px;
   top: 16px;
+  margin-left: 7%;
 }
 
 .waveStyle {
@@ -211,6 +213,7 @@
 
 @media screen and (max-width: 576px) {
   .vpAvt {
+    margin-left: 0;
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
