@@ -3,11 +3,12 @@ import classNames from "classnames";
 import styles from "./style.module.scss";
 import Svg1 from "./svg1";
 import Svg2 from "./svg2";
+import Image from "next/image";
 
 const Explore = () => {
   return (
     <div className={classNames(styles.topContainer, "relative")}>
-      <div className={classNames("custom-container overflow-hidden")}>
+      <div className={classNames("custom-container overflow-hidden text-center lg:text-start")}>
         <div
           className={classNames(
             "flex items-center",
@@ -27,37 +28,29 @@ const Explore = () => {
             <h2 className={classNames(styles.title)}>
               Setup takes less than 5 minutes
             </h2>
-            <p className={classNames(styles.subTitle)}>
+            <p className={classNames(styles.subTitle, "self-center lg:self-start")}>
               Leverage our no code solution. We can handle any media format.
               Simply send us your live feed and we send it back to you
               translated in real time.
             </p>
-            <CustomButton title="Learn More" />
+            {/* <CustomButton title="Learn More" /> */}
+            <div className=" w-full relative aspect-video">
+              <Image 
+                src={"/explore_image.png"}
+                alt="Explore Section Image"
+                height={1000}
+                width={1400}
+                className="aspect-video"
+              />
+            </div>
           </div>
 
-          <div
+          {/* <div
             className={classNames(
               "flex flex-col items-center justify-between lg:pl-28",
               styles.codingContainer
             )}
-          >
-            <div className="bg-black w-full flex rounded-lg text-white items-center justify-center font-semibold text-lg py-10">
-              Live Feed
-            </div>
-            <div className="w-[50%] flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
-              Lingopal AI
-            </div>
-            <div className="flex w-full justify-between space-x-6">
-              <div className="w-full flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
-                TV
-              </div>
-              <div className="w-full flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
-                APP
-              </div>
-              <div className="w-full flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
-                WEBSITE
-              </div>
-            </div>
+          > */}
             {/* <div className={classNames(styles.codeContainer)}>
               <div className={classNames("flex items-start gap-3")}>
                 <span className={classNames(styles.codeIndex)}>1</span>
@@ -173,7 +166,7 @@ const Explore = () => {
                 <p className={classNames(styles.codeBlock)}>{`\u007d`}</p>
               </div> */}
             {/* </div> */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

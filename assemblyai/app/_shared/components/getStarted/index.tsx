@@ -22,7 +22,7 @@ const GetStarted = () => {
           )}
         >
           <CustomButton
-            title="Contact sales"
+            title="Demo"
             containerStyle={classNames(styles.btn2)}
           />
         </div>
