@@ -49,7 +49,7 @@ const Header = () => {
       <WaveAnimation />
       <div className={classNames(styles.loopSlider)} id="slider-id">
         <div className={classNames(styles.inner, "gap-5")}>
-          <Icons.LoopLogo2 />
+          {/* <Icons.LoopLogo2 />
           <Icons.BBCLogo />
           <Icons.TypeFormLogo />
           <Icons.NBCLogo />
@@ -70,7 +70,17 @@ const Header = () => {
           <Icons.GrainLogo />
           <Icons.AirGramLogo />
           <Icons.DropBoxLogo />
-          <Icons.CallRailLogo2 />
+          <Icons.CallRailLogo2 /> */}
+          <Icons.BCAN />
+          <Icons.Baby />
+          <Icons.Microsoft />
+          <Icons.Mouth />
+          <Icons.NSI />
+          {/* <Icons.PBS /> */}
+          <Icons.Reddit />
+          <Icons.SFT />
+          <Icons.Tesla />
+          <Icons.Twitter />
         </div>
       </div>
     </div>
