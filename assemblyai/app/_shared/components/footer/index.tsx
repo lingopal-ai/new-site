@@ -15,7 +15,7 @@ const Footer = () => {
         >
           <div
             className={classNames(
-              "col-span-2 lg:col-span-1 flex flex-col items-start gap-5"
+              "col-span-2 lg:col-span-1 flex flex-col items-start gap-5 text-black"
             )}
           >
             <span className={classNames(styles.companyInfo)}>
@@ -45,10 +45,10 @@ const Footer = () => {
           </div>
           <div
             className={classNames(
-              "col-span-2 lg:col-span-1 grid grid-cols-1 sm:grid-cols-3 gap-5"
+              "col-span-2 lg:col-span-1 grid grid-cols-1 sm:grid-cols-3 gap-5 text-black"
             )}
           >
-            <div className={classNames("flex flex-col items-start gap-3")}>
+            <div className={classNames("flex flex-col items-start gap-3 text-black")}>
               <span className={classNames(styles.listTitle)}>Product</span>
               {productList?.map((itm, inx) => {
                 return (

@@ -9,7 +9,7 @@
 }
 
 .companyInfo {
-  color: $LIGHT_GRAY;
+  color: #000;
   font-family: var(--font-roboto);
   font-size: 15.875px;
   font-style: normal;
@@ -30,7 +30,7 @@
     left: 0;
     bottom: 0;
     transition: width 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
   }
   &:hover {
     &::after {
@@ -51,7 +51,7 @@
 }
 
 .listItem {
-  color: #fff;
+  color: #000000;
   font-family: var(--font-roboto-thin);
   font-size: 16px;
   font-style: normal;
@@ -66,7 +66,7 @@
     left: 0;
     bottom: 0;
     transition: width 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
   }
   &:hover {
     &::after {
@@ -82,7 +82,7 @@
 }
 
 .label {
-  color: #fff;
+  color: #000000;
   font-family: var(--font-roboto-thin);
   font-size: 13px;
   font-style: normal;
@@ -92,7 +92,7 @@
 }
 
 .label2 {
-  color: #fff;
+  color: #000000;
   font-family: var(--font-roboto-thin);
   font-size: 13px;
   font-style: normal;
@@ -108,7 +108,7 @@
     left: 0;
     bottom: 0;
     transition: width 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
   }
   &:hover {
     &::after {
