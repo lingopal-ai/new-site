@@ -8,7 +8,7 @@ import Image from "next/image";
 const Explore = () => {
   return (
     <div className={classNames(styles.topContainer, "relative")}>
-      <div className={classNames("custom-container overflow-hidden")}>
+      <div className={classNames("custom-container overflow-hidden text-center lg:text-start")}>
         <div
           className={classNames(
             "flex items-center",
@@ -28,17 +28,19 @@ const Explore = () => {
             <h2 className={classNames(styles.title)}>
               Setup takes less than 5 minutes
             </h2>
-            <p className={classNames(styles.subTitle)}>
+            <p className={classNames(styles.subTitle, "self-center lg:self-start")}>
               Leverage our no code solution. We can handle any media format.
               Simply send us your live feed and we send it back to you
               translated in real time.
             </p>
             {/* <CustomButton title="Learn More" /> */}
-            <div className="max-w-[1515px] max-h-[760px] h-full relative">
+            <div className=" w-full relative aspect-video">
               <Image 
                 src={"/explore_image.png"}
                 alt="Explore Section Image"
-                fill
+                height={1000}
+                width={1400}
+                className="aspect-video"
               />
             </div>
           </div>
