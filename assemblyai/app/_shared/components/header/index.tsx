@@ -35,12 +35,13 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className="w-0 max-h-[554px] max-w-[831px] lg:flex-1 relative lg:h-[554px] z-10 self-end">
+        <div className="w-0 max aspect-square lg:w-full lg:flex-1 relative lg:h-[554px] z-10 self-end">
           <Image 
             src={"/header_image.png"}
             alt="Header Image"
             priority
-            fill
+            height={554}
+            width={831}
           />
         </div>
       </div>
