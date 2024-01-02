@@ -30,24 +30,18 @@ const HighTech = () => {
         Experience superhuman accuracy
       </h2>
       <div className={classNames(styles.contentContainer, "mt-10")}>
-        <h3>
-          Conformer-2 is our latest, state-of-the-art AI model for
-          speech-to-text
+        <h3 className="text-white text-xl">
+          "People do not speak like a dictionary"
         </h3>
         <div
           className={classNames(
-            "flex items-center justify-between gap-12 grid grid-cols-3"
+            "gap-12 grid grid-cols-3"
           )}
         >
-          <div className="col-span-3 md:col-span-2">
-            {/* <Image
-              src={Images.VideoThumbnail}
-              alt="thumbail"
-              placeholder="blur"
-              height={493}
-              width={864}
-              className={classNames(styles.thumbnailStyle)}
-            /> */}
+          <div className="col-span-3 md:col-span-2 text-white font-mono text-2xl pt-16 pl-16">
+            <p>Our AI has been trained on millions of</p>
+            <p>data points to out-perform computer</p>
+            <p>human translators.</p>
           </div>
 
           <div

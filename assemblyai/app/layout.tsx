@@ -4,9 +4,9 @@ import { JetBrains_Mono, Roboto_Mono, Roboto, Inter } from "next/font/google";
 import classNames from "classnames";
 
 export const metadata: Metadata = {
-  title: "AssemblyAI | AI models to transcribe and understand speech",
+  title: "LingopalAI | AI models to transcribe and understand speech",
   description:
-    "With AssemblyAI's industry-leading Speech AI models, transcribe speech to text and extract insights from your voice data.",
+    "With LingopalAI's industry-leading Speech AI models, transcribe speech to text and extract insights from your voice data.",
 };
 
 const roboto = Roboto({
@@ -57,10 +57,6 @@ export default function RootLayout({
         inter.variable
       )}
     >
-      <head>
-        <link rel="icon" href="/logo.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
-      </head>
       <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
