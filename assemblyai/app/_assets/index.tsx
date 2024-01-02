@@ -45,6 +45,18 @@ import ChatIcon from "./icons/chat.svg";
 import ChevDown from "./icons/chevDown.svg";
 import Hamburger from "./icons/hamburger.svg";
 
+import Baby from "./companies/baby.svg"
+import BCAN from "./companies/bcan.svg"
+import Microsoft from "./companies/microsoft.svg"
+import Mouth from "./companies/mouth.svg"
+import NSI from "./companies/NSI.svg"
+import PBS from "./companies/PBS.png"
+import Reddit from "./companies/reddit.svg"
+import SFT from "./companies/sft.svg"
+import Tesla from "./companies/tesla.svg"
+// import Twitter from "./companies/twitter.png"
+
+
 const Images = {
   Story1,
   Story2,
@@ -62,6 +74,15 @@ const Images = {
 };
 
 const Icons = {
+  Tesla,
+  SFT,
+  Reddit,
+  PBS,
+  NSI,
+  Mouth,
+  Microsoft,
+  BCAN,
+  Baby,
   CallRailLogo,
   LoopLogo,
   Play,
