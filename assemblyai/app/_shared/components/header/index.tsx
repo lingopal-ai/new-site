@@ -1,7 +1,6 @@
 import { Icons } from "@assets";
 import CustomButton from "@components/customButton";
 import classNames from "classnames";
-import AnimatedText from "./AnimatedText";
 import styles from "./style.module.scss";
 import WaveAnimation from "./waveAnimation";
 import SnakeAnimation from "./snakeAnimation";
@@ -18,14 +17,11 @@ const Header = () => {
           )}
         >
           <h1 className="text-center lg:text-left">
-            Turn voice data into <br className="flex lg:hidden" />{" "}
-            <AnimatedText /> <br /> with our leading Speech AI models
+            Translate live video & <br className="flex lg:hidden" />{" "}
+             <br /> audio in realtime 
           </h1>
           <p className="text-center lg:text-left">
-            Built by AI experts, AssemblyAI’s Speech AI models include accurate
-            speech-to-text for voice data (such as calls, virtual meetings, and
-            podcasts), speaker detection, sentiment analysis, chapter detection,
-            PII redaction, and more.
+          Built by AI experts, LingoPal translates millions of data points daily.  Used across many industries for our accurate speech-to-speech translation, speaker detection, speaker emotion  and more. 
           </p>
           <div
             className={classNames(
@@ -33,12 +29,8 @@ const Header = () => {
             )}
           >
             <CustomButton
-              title="Use our API"
+              title="Contact Sales"
               containerStyle={classNames(styles.btn1)}
-            />
-            <CustomButton
-              title="Contact sales"
-              containerStyle={classNames(styles.btn2)}
             />
           </div>
         </div>

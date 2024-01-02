@@ -1,4 +1,3 @@
-import Stories from "@components/stories";
 import classNames from "classnames";
 import styles from "./style.module.scss";
 import WhyUs from "@components/whyUs";
@@ -20,7 +19,6 @@ const Home = () => {
       <NavBar />
       <Header />
       <Explore />
-      <Stories />
       <div className={classNames(styles.whyUsContainer, "mt-10 md:mt-20")}>
         <WhyUs />
         <HighTech />

@@ -7,31 +7,31 @@ const data: {
   actionLabel: string;
 }[] = [
   {
-    title: "Easy to integrate",
+    title: "Easy to integrate + 24/7 support",
     Icon: Icons.EasyIntergrate,
     description:
-      "Developers get immediate access to our API, and our documentation is crafted with detailed code examples and explanations, making it easy to quickly integrate Speech AI into their applications.",
+      "Connect your live stream to us in under 5 minutes.  Our team of AI experts  can help customize our solution for your needs.",
     actionLabel: "Learn more",
   },
   {
-    title: "Pricing that scales",
+    title: "Captions & Audio",
     Icon: Icons.PricingScales,
     description:
-      "Choose the AI models for your use case and only pay for what you use. We work with you to ensure pricing scales as you grow",
+      "Captions and audio are translated in real time in 60+ languages.",
     actionLabel: "View pricing",
   },
   {
-    title: "Always up-to-date",
+    title: "Cloned Voice",
     Icon: Icons.UptoDate,
     description:
-      "Stay on top of the latest AI breakthroughs. Our Speech AI team of researchers and engineers is constantly improving and updating our AI models so you always have access to state-of-the-art AI technology.",
+      "Every voice is cloned in real time. Our translated audio sounds identical to the original speakers voice.",
     actionLabel: "View blog",
   },
   {
-    title: "24/7 customer support",
+    title: "Conversational AI",
     Icon: Icons.CustomerSupport,
     description:
-      "Leverage our team of AI experts who can help build with you and accelerate your product roadmap.",
+      "Our AI can handle industry vocabulary and is trained to handle how people speak. (Slang, Idioms, and more)",
     actionLabel: "Join our Discord",
   },
 ];

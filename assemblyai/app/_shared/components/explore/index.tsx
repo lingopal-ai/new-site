@@ -25,25 +25,40 @@ const Explore = () => {
             )}
           >
             <h2 className={classNames(styles.title)}>
-              Quickly build AI products with voice data
+              Setup takes less than 5 minutes
             </h2>
             <p className={classNames(styles.subTitle)}>
-              Leverage our AI models that continuously push the state-of-the-art
-              in Automatic Speech Recognition (ASR), Speaker Diarization,
-              Speaker PII Redaction, Speech Summarization, and more. Transcribe
-              speech to text and accurately analyze meetings, phone calls,
-              podcasts, live audio streams, and other voice data.
+              Leverage our no code solution. We can handle any media format.
+              Simply send us your live feed and we send it back to you
+              translated in real time.
             </p>
-            <CustomButton title="Explore models" />
+            <CustomButton title="Learn More" />
           </div>
 
           <div
             className={classNames(
-              "flex flex-col items-start",
+              "flex flex-col items-center justify-between lg:pl-28",
               styles.codingContainer
             )}
           >
-            <div className={classNames(styles.codeContainer)}>
+            <div className="bg-black w-full flex rounded-lg text-white items-center justify-center font-semibold text-lg py-10">
+              Live Feed
+            </div>
+            <div className="w-[50%] flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
+              Lingopal AI
+            </div>
+            <div className="flex w-full justify-between space-x-6">
+              <div className="w-full flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
+                TV
+              </div>
+              <div className="w-full flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
+                APP
+              </div>
+              <div className="w-full flex rounded-lg text-blue-400 items-center justify-center font-semibold text-lg py-10 border-yellow-400 border-2 bg-white">
+                WEBSITE
+              </div>
+            </div>
+            {/* <div className={classNames(styles.codeContainer)}>
               <div className={classNames("flex items-start gap-3")}>
                 <span className={classNames(styles.codeIndex)}>1</span>
                 <p className={classNames(styles.codeLine)}>
@@ -156,8 +171,8 @@ const Explore = () => {
               <div className={classNames("flex items-start gap-3")}>
                 <span className={classNames(styles.codeIndex)}>12</span>
                 <p className={classNames(styles.codeBlock)}>{`\u007d`}</p>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

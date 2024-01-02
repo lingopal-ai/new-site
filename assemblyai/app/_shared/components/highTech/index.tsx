@@ -40,14 +40,14 @@ const HighTech = () => {
           )}
         >
           <div className="col-span-3 md:col-span-2">
-            <Image
+            {/* <Image
               src={Images.VideoThumbnail}
               alt="thumbail"
               placeholder="blur"
               height={493}
               width={864}
               className={classNames(styles.thumbnailStyle)}
-            />
+            /> */}
           </div>
 
           <div
@@ -61,10 +61,10 @@ const HighTech = () => {
           </div>
         </div>
       </div>
-      <h2 className={classNames(styles.title, "mt-10")}>
-        Join over 200,000 developers building with AssemblyAI
+      <h2 className={classNames(styles.title, "my-10")}>
+        Join over 200,000 developers building with Lingopal AI
       </h2>
-      <div
+      {/* <div
         className={classNames(styles.animatedContainer, "mt-10 gap-4 mb-8")}
         ref={animatedContainer}
       >
@@ -296,7 +296,7 @@ const HighTech = () => {
             </p>
           </motion.div>
         </div>
-      </div>
+      </div> */}
       <CustomButton
         title="Start using the API for free"
         containerStyle={classNames(styles.btnStyle)}

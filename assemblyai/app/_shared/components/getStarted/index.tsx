@@ -22,15 +22,11 @@ const GetStarted = () => {
           )}
         >
           <CustomButton
-            title="Use our API"
-            containerStyle={classNames(styles.btn1)}
-          />
-          <CustomButton
             title="Contact sales"
             containerStyle={classNames(styles.btn2)}
           />
         </div>
-        <div className={classNames(styles.codeContainer, "mt-10")}>
+        {/* <div className={classNames(styles.codeContainer, "mt-10")}>
           <div className={classNames("flex items-start gap-3")}>
             <span className={classNames(styles.codeIndex)}>1</span>
             <p className={classNames(styles.codeLine)}>
@@ -60,8 +56,8 @@ const GetStarted = () => {
             <p className={classNames(styles.codeLine)}>
               <span>print</span>(transcript.text)
             </p>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </div>
   );
