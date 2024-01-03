@@ -19,12 +19,12 @@ const Footer = () => {
             )}
           >
             <span className={classNames(styles.companyInfo)}>
-              Build new AI products with voice data leveraging Lingopal`s 
+              Build new AI products with voice data leveraging Lingopal`s
               industry-leading Speech AI models for accurate speech-to-text,
               speaker detection, sentiment analysis, chapter detection, PII
               redaction, and more.
             </span>
-            <div
+            {/* <div
               className={classNames(
                 "flex items-center justify-content-start gap-2"
               )}
@@ -41,14 +41,18 @@ const Footer = () => {
               <div className={classNames(styles.socialIcon)}>
                 <Icons.LinkdIn />
               </div>
-            </div>
+            </div> */}
           </div>
-          <div
+          {/* <div
             className={classNames(
               "col-span-2 lg:col-span-1 grid grid-cols-1 sm:grid-cols-3 gap-5 text-black"
             )}
           >
-            <div className={classNames("flex flex-col items-start gap-3 text-black")}>
+            <div
+              className={classNames(
+                "flex flex-col items-start gap-3 text-black"
+              )}
+            >
               <span className={classNames(styles.listTitle)}>Product</span>
               {productList?.map((itm, inx) => {
                 return (
@@ -78,10 +82,10 @@ const Footer = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className={classNames(styles.bottomContainer)}>
+      {/* <div className={classNames(styles.bottomContainer)}>
         <div className={classNames("custom-container flex")}>
           <div className={classNames("grid grid-cols-2 gap-5")}>
             <div className={classNames("col-span-2 lg:col-span-1")}>
@@ -123,7 +127,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };
