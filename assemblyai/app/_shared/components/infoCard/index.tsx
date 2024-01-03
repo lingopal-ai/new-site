@@ -6,10 +6,9 @@ interface Props {
   title: string;
   Icon: any;
   description: string;
-  actionLabel: string;
 }
 
-const InfoCard = ({ title, Icon, description, actionLabel }: Props) => {
+const InfoCard = ({ title, Icon, description }: Props) => {
   return (
     <div className={classNames("flex flex-col items-start gap-3")}>
       <Icon className={classNames(styles.iconStyle)} />
@@ -21,8 +20,6 @@ const InfoCard = ({ title, Icon, description, actionLabel }: Props) => {
           styles.actionContainer
         )}
       >
-        <span>{actionLabel}</span>
-        <Icons.ArrowRight />
       </div>
     </div>
   );

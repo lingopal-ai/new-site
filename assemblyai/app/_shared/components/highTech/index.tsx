@@ -55,9 +55,9 @@ const HighTech = () => {
           </div>
         </div>
       </div>
-      <h2 className={classNames(styles.title, "my-10")}>
+      {/* <h2 className={classNames(styles.title, "my-10")}>
         Join over 200,000 developers building with Lingopal AI
-      </h2>
+      </h2> */}
       {/* <div
         className={classNames(styles.animatedContainer, "mt-10 gap-4 mb-8")}
         ref={animatedContainer}
@@ -291,10 +291,10 @@ const HighTech = () => {
           </motion.div>
         </div>
       </div> */}
-      <CustomButton
+      {/* <CustomButton
         title="Start using the API for free"
         containerStyle={classNames(styles.btnStyle)}
-      />
+      /> */}
     </div>
   );
 };

@@ -51,7 +51,7 @@ const Svg2 = () => {
             y2="0.296631"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.35" stopColor="#a3d41c" stopOpacity="0.75" />
+            <stop offset="0.35" stopColor="#1D3CB8" stopOpacity="0.75" />
             <stop offset="1" stopColor="#a3d41c" stopOpacity="0" />
           </linearGradient>
         </defs>

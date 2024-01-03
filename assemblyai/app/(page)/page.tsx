@@ -23,7 +23,7 @@ const Home = () => {
         <WhyUs />
         <HighTech />
       </div>
-      <JoinUs />
+      {/* <JoinUs /> */}
       <div>
         <GetStarted />
         <Footer />

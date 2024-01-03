@@ -81,6 +81,57 @@ const Header = () => {
           <Icons.SFT />
           <Icons.Tesla />
           <Icons.Twitter />
+          <Icons.BCAN />
+          <Icons.Baby />
+          <Icons.Microsoft />
+          <Icons.Mouth />
+          <Icons.NSI />
+          <Icons.PBS />
+          <Icons.Reddit />
+          <Icons.SFT />
+          <Icons.Tesla />
+          <Icons.Twitter />
+          <Icons.BCAN />
+          <Icons.Baby />
+          <Icons.Microsoft />
+          <Icons.Mouth />
+          <Icons.NSI />
+          <Icons.PBS />
+          <Icons.Reddit />
+          <Icons.SFT />
+          <Icons.Tesla />
+          <Icons.Twitter />
+          <Icons.BCAN />
+          <Icons.Baby />
+          <Icons.Microsoft />
+          <Icons.Mouth />
+          <Icons.NSI />
+          <Icons.PBS />
+          <Icons.Reddit />
+          <Icons.SFT />
+          <Icons.Tesla />
+          <Icons.Twitter />
+          <Icons.BCAN />
+          <Icons.Baby />
+          <Icons.Microsoft />
+          <Icons.Mouth />
+          <Icons.NSI />
+          <Icons.PBS />
+          <Icons.Reddit />
+          <Icons.SFT />
+          <Icons.Tesla />
+          <Icons.Twitter />
+          <Icons.BCAN />
+          <Icons.Baby />
+          <Icons.Microsoft />
+          <Icons.Mouth />
+          <Icons.NSI />
+          <Icons.PBS />
+          <Icons.Reddit />
+          <Icons.SFT />
+          <Icons.Tesla />
+          <Icons.Twitter />
+          
         </div>
       </div>
     </div>

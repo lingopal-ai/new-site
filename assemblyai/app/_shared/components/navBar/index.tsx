@@ -19,7 +19,7 @@ const NavBar = () => {
               height={43}
               className={classNames(styles.logo)}
             />
-            <nav
+            {/* <nav
               className={classNames(
                 "hidden lg:flex items-center justify-start gap-5"
               )}
@@ -36,17 +36,17 @@ const NavBar = () => {
               <Link href={"#"} className={classNames(styles.link)}>
                 Company
               </Link>
-            </nav>
+            </nav> */}
           </div>
           <div
             className={classNames(
               "shrink-0 items-center justify-end gap-3 hidden lg:flex"
             )}
           >
-            <CustomButton
+            {/* <CustomButton
               title="Log in"
               containerStyle={classNames(styles.btn1)}
-            />
+            /> */}
             <CustomButton
               title="Schedule Demo"
               containerStyle={classNames(styles.btn2)}
@@ -54,8 +54,8 @@ const NavBar = () => {
           </div>
           <div
             className={classNames(styles.hamIconContainer, "flex lg:hidden")}
-          >
-            <Icons.Hamburger />
+            >
+            {/* <Icons.Hamburger /> */}
           </div>
         </div>
         <AnimatedBackground />
