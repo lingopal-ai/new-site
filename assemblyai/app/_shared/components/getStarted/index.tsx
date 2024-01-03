@@ -21,10 +21,7 @@ const GetStarted = () => {
             "flex flex-col md:flex-row items-center justify-center mt-8 gap-4 w-full"
           )}
         >
-          <CustomButton
-            title="Demo"
-            containerStyle={classNames(styles.btn2)}
-          />
+          <CustomButton title="Demo" containerStyle={classNames(styles.btn2)} />
         </div>
         {/* <div className={classNames(styles.codeContainer, "mt-10")}>
           <div className={classNames("flex items-start gap-3")}>

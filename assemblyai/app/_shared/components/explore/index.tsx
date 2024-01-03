@@ -36,7 +36,7 @@ const Explore = () => {
             {/* <CustomButton title="Learn More" /> */}
             <div className=" w-full relative aspect-video">
               <Image 
-                src={"/explore_image.png"}
+                src={"/explore_image1.png"}
                 alt="Explore Section Image"
                 height={1000}
                 width={1400}
