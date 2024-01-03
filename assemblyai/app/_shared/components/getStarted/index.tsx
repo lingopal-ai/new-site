@@ -13,7 +13,7 @@ const GetStarted = () => {
         )}
       >
         <span className={classNames(styles.title, "mb-3")}>
-          Start building with AssemblyAI
+          Start building with Lingopal AI
         </span>
         <h2 className={classNames(styles.subTitle)}>Get started in seconds</h2>
         <div
