@@ -26,7 +26,7 @@ const CustomButton = ({
     right: "right",
   };
   return (
-    <Link href="https://calendly.com/lingopal-ai/lingopal-ai-demo" className="z-50">
+    <Link href="https://calendly.com/lingopal-ai-demos/30min" className="z-50">
       <button
         className={classNames(
           styles.customBtnContainer,
